@@ -1,11 +1,13 @@
 extends RigidBody2D
 
 
-export var speed = 200
+var speed = 200 + (randi() % 100)
 var direction = Vector2.ZERO
 var moving = false
 
 
+func _init():
+	randomize()
 
 func _ready():
 	play_random_animation()

@@ -35,14 +35,14 @@ func spawn_enemy():
 
 
 func new_game():
-	$CanvasLayerHUD.show_message("Get Ready!")
+	#$CanvasLayerHUD.show_message("Get Ready!")
 	$Player.respawn_player(Vector2(238,346))
 	$StartTimer.one_shot = true
 	$StartTimer.start()
 
 
 func game_over():
-	$CanvasLayerHUD.gameOverMessage()
+	#$CanvasLayerHUD.gameOverMessage()
 	$ScoreTimer.stop()
 	$SpawnTimer.stop()
 
